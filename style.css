@@ -199,19 +199,6 @@ h2 em {
   border-bottom: 1px solid var(--gold);
   padding-bottom: 5px;
 }
-.hero-proof {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin-top: 36px;
-  color: #85887e;
-  font-size: 9px;
-  letter-spacing: 0.5px;
-}
-.proof-star {
-  color: var(--gold);
-  font-size: 17px;
-}
 .hero-photos {
   min-height: 425px;
   position: relative;
@@ -241,33 +228,6 @@ h2 em {
   box-shadow: 0 12px 28px rgba(45, 56, 45, 0.12);
   background: linear-gradient(140deg, #c7b49b, #e8dfd1 50%, #9aa58f);
 }
-.photo-note {
-  position: absolute;
-  right: 0;
-  bottom: 8%;
-  display: grid;
-  place-content: center;
-  width: 104px;
-  height: 104px;
-  border: 1px solid var(--gold);
-  border-radius: 50%;
-  background: var(--cream);
-  color: var(--sage);
-  font-family: var(--serif);
-  font-size: 15px;
-  line-height: 1.15;
-  text-align: center;
-  transform: rotate(8deg);
-}
-.intro-ribbon {
-  padding: 18px 24px;
-  background: var(--sage-dark);
-  color: var(--white);
-  text-align: center;
-  font-family: var(--serif);
-  font-size: clamp(17px, 2vw, 22px);
-  font-style: italic;
-}
 
 .about {
   display: grid;
@@ -282,16 +242,6 @@ h2 em {
 .about-photo {
   min-height: 390px;
   background: linear-gradient(145deg, #a8ad98, #d6c5ad 52%, #788c79);
-}
-.image-index {
-  position: absolute;
-  right: -4px;
-  bottom: 2px;
-  padding: 10px 15px;
-  background: var(--sage);
-  color: white;
-  font-size: 9px;
-  letter-spacing: 1.5px;
 }
 .about-copy h2,
 .section-heading-row h2,
@@ -359,57 +309,6 @@ h2 em {
   font-size: 12px;
   line-height: 1.75;
 }
-.process-list {
-  border-top: 1px solid rgba(52, 75, 61, 0.22);
-}
-.process-step {
-  display: grid;
-  grid-template-columns: 80px 1fr 60px;
-  align-items: center;
-  gap: 20px;
-  min-height: 125px;
-  padding: 21px 15px;
-  border-bottom: 1px solid rgba(52, 75, 61, 0.22);
-}
-.step-number {
-  color: var(--gold);
-  font-family: var(--serif);
-  font-size: 22px;
-}
-.step-main h3 {
-  margin-bottom: 6px;
-  color: var(--sage-dark);
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 600;
-}
-.step-main p {
-  max-width: 690px;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.7;
-}
-.step-symbol {
-  display: grid;
-  place-items: center;
-  width: 45px;
-  height: 45px;
-  border: 1px solid rgba(197, 161, 106, 0.65);
-  border-radius: 50%;
-  color: var(--gold);
-  font-size: 21px;
-}
-.process-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding-top: 22px;
-  color: var(--sage-dark);
-  font-family: var(--serif);
-  font-size: 16px;
-  font-style: italic;
-}
 .button-outline {
   border: 1px solid var(--sage);
   color: var(--sage-dark);
@@ -455,14 +354,6 @@ h2 em {
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.package-kicker {
-  margin-bottom: 9px;
-  color: var(--gold);
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 1.3px;
   text-transform: uppercase;
 }
 .package-card h3 {
@@ -538,17 +429,6 @@ h2 em {
   min-height: 420px;
   background: linear-gradient(145deg, #8e9d88, #d2c0a8 55%, #a2a28c);
 }
-.journalist-caption {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 12px 16px;
-  background: var(--gold);
-  color: white;
-  font-family: var(--serif);
-  font-size: 15px;
-  font-style: italic;
-}
 .memory-strip {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1.1fr;
@@ -612,11 +492,6 @@ h2 em {
 }
 .button-light:hover {
   background: white;
-}
-.contact-small {
-  margin-top: 14px;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 10px;
 }
 
 .contact-links {
@@ -809,23 +684,10 @@ h2 em {
     margin-top: 18px;
     font-size: 13px;
   }
-  .hero-proof {
-    align-items: flex-start;
-    font-size: 8px;
-    line-height: 1.5;
-  }
   .hero-photos {
     width: min(100%, 480px);
     min-height: 340px;
     align-self: center;
-  }
-  .photo-note {
-    width: 85px;
-    height: 85px;
-    font-size: 12px;
-  }
-  .intro-ribbon {
-    padding: 16px 20px;
   }
   .about,
   .journalist {
@@ -850,31 +712,6 @@ h2 em {
   }
   .heading-aside {
     margin-top: 13px;
-  }
-  .process-step {
-    grid-template-columns: 40px 1fr 42px;
-    gap: 10px;
-    min-height: 120px;
-    padding-inline: 0;
-  }
-  .step-number {
-    font-size: 18px;
-  }
-  .step-main h3 {
-    font-size: 19px;
-  }
-  .step-main p {
-    font-size: 11px;
-  }
-  .step-symbol {
-    width: 36px;
-    height: 36px;
-    font-size: 17px;
-  }
-  .process-footer {
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 15px;
   }
   .package-grid {
     grid-template-columns: 1fr;
@@ -950,17 +787,6 @@ h2 em {
   min-height: 475px;
   background: linear-gradient(145deg, #b9aa94, #e0d5c5 48%, #788b78);
 }
-.quality-photo-caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 13px 17px;
-  background: var(--sage-dark);
-  color: var(--white);
-  font-family: var(--serif);
-  font-size: 15px;
-  font-style: italic;
-}
 .quality-copy h2,
 .thickness-heading h2 {
   color: var(--sage-dark);
@@ -992,11 +818,6 @@ h2 em {
   gap: 14px;
   padding: 16px 0;
   border-bottom: 1px solid rgba(52, 75, 61, 0.2);
-}
-.quality-icon {
-  color: var(--gold);
-  font-family: var(--serif);
-  font-size: 18px;
 }
 .quality-points h3 {
   margin-bottom: 5px;
@@ -1186,5 +1007,235 @@ h2 em {
   }
   .thickness-image {
     max-height: 440px;
+  }
+}
+
+
+/* ============================================================
+   Refinements: calmer layout, readable text, new How it works
+   ============================================================ */
+
+/* Header: the bar is cream, so nav colours need to be dark (they were white). */
+.main-navigation .nav-contact {
+  border-color: var(--sage);
+}
+.main-navigation .nav-contact:hover {
+  background: var(--sage);
+  color: var(--white);
+}
+
+/* Photo wraps no longer carry offset labels, so drop the extra padding. */
+.about-image-wrap,
+.quality-photo-wrap,
+.journalist-visual {
+  padding: 0;
+}
+
+/* More breathing room between sections. */
+.section-block {
+  padding-block: 96px;
+}
+
+/* Readable type sizes (many were 8-11px). */
+.eyebrow {
+  font-size: 12px;
+}
+.hero-intro,
+.about-copy p:not(.eyebrow),
+.journalist-copy p:not(.eyebrow) {
+  font-size: 16px;
+}
+.about-copy .lead-copy,
+.journalist-copy .lead-copy {
+  font-size: 22px !important;
+}
+.underlined-link,
+.inline-link,
+.button {
+  font-size: 14px;
+}
+.heading-aside,
+.quality-points p,
+.package-description {
+  font-size: 15px;
+}
+.quality-points h3 {
+  font-size: 21px;
+}
+.package-card li {
+  font-size: 14px;
+  padding-left: 27px;
+}
+.package-card li::before {
+  width: 17px;
+  height: 17px;
+  font-size: 10px;
+}
+.package-link {
+  font-size: 13px;
+}
+.package-note {
+  font-size: 14px;
+}
+.popular-label {
+  font-size: 11px;
+}
+.quote-caption {
+  font-size: 12px;
+}
+.memory-strip-copy .eyebrow {
+  font-size: 12px;
+}
+.contact-section .contact-inner > p:not(.eyebrow) {
+  font-size: 16px !important;
+}
+.contact-links a {
+  font-size: 15px;
+}
+.footer-inner > p,
+.back-to-top {
+  font-size: 13px;
+}
+.copyright {
+  font-size: 12px;
+}
+.main-navigation {
+  font-size: 13px;
+}
+
+/* Quality section: one calm column of points, no numbering. */
+.quality-points article {
+  display: block;
+  padding: 20px 0;
+}
+
+/* Packages: roomier cards. */
+.package-card {
+  padding: 34px 28px 26px;
+}
+
+/* ---------- How it works ---------- */
+.process-heading {
+  max-width: 680px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+.process-heading h2 {
+  font-size: clamp(39px, 4.5vw, 57px);
+}
+.process-subheading {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  padding: 0;
+  list-style: none;
+}
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 18px 30px;
+  background: var(--white);
+  border: 1px solid rgba(52, 75, 61, 0.2);
+  border-radius: 22px;
+  text-align: center;
+}
+.step-number {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: var(--sage);
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+}
+.process-step h3 {
+  margin-bottom: 10px;
+  color: var(--sage-dark);
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.process-step p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.process-closing {
+  max-width: 720px;
+  margin: 52px auto 0;
+  text-align: center;
+}
+.process-closing p {
+  margin-bottom: 26px;
+  color: var(--sage-dark);
+  font-family: var(--serif);
+  font-size: clamp(19px, 2.2vw, 24px);
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .process-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .section-block {
+    padding-block: 64px;
+  }
+  /* The menu button sits on the cream header, so it needs dark lines. */
+  .menu-toggle {
+    border-color: var(--sage);
+  }
+  .menu-toggle span {
+    background: var(--sage-dark);
+  }
+  .main-navigation a {
+    color: var(--white);
+    font-size: 15px;
+  }
+  .main-navigation .nav-contact:hover {
+    background: transparent;
+  }
+  .process-heading {
+    margin-bottom: 36px;
+  }
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .process-step {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    column-gap: 16px;
+    align-items: center;
+    padding: 18px 20px;
+    text-align: left;
+    border-radius: 16px;
+  }
+  .step-number {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+  .process-step h3 {
+    margin-bottom: 2px;
+    font-size: 21px;
+  }
+  .process-step p {
+    font-size: 14px;
+  }
+  .process-closing {
+    margin-top: 40px;
   }
 }
