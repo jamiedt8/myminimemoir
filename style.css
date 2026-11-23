@@ -1,6 +1,8 @@
 :root {
   --cream: #f7f3ee;
-  --cream-deep: #f1f4ee;
+  --cream-deep: #f3ecdf;
+  --line: rgba(52, 75, 61, 0.16);
+  --gutter: 36px;
   --sage: #587461;
   --sage-dark: #344b3d;
   --gold: #8d6737;
@@ -543,7 +545,7 @@ h2 em {
 }
 
 .site-footer {
-  background: #f1f4ee;
+  background: var(--cream-deep);
 }
 .footer-inner {
   min-height: 88px;
@@ -1238,4 +1240,50 @@ h2 em {
   .process-closing {
     margin-top: 40px;
   }
+}
+
+
+/* ============================================================
+   Section separation + tighter flow
+   ============================================================ */
+/* Full-width sections with centred content, so backgrounds run edge to edge. */
+.about.section-shell,
+.process.section-shell,
+.journalist.section-shell {
+  width: auto;
+  margin-inline: 0;
+  padding-inline: max(var(--gutter), calc((100% - var(--content-width)) / 2));
+}
+.hero {
+  width: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 56px max(28px, calc((100% - 1360px) / 2)) 64px;
+}
+.section-block { padding-block: 80px; }
+
+/* Background rhythm: no two neighbours match, plus a thin line between all. */
+.hero { background: var(--cream); }
+.about { background: var(--white); }
+.process { background: var(--cream-deep); }
+.quality-section { background: var(--cream); }
+.packages { background: var(--cream-deep); }
+.thickness-section { background: var(--cream); }
+.journalist { background: var(--cream-deep); }
+main > section + section { border-top: 1px solid var(--line); }
+
+/* Solid contact button in the nav */
+.main-navigation .nav-contact {
+  background: var(--sage);
+  border-color: var(--sage);
+  color: var(--white);
+}
+.main-navigation .nav-contact:hover { background: var(--sage-dark); color: var(--white); }
+
+@media (max-width: 900px) {
+}
+@media (max-width: 700px) {
+  :root { --gutter: 19px; }
+  .hero { padding: 40px 19px 44px; }
+  .section-block { padding-block: 56px; }
 }
