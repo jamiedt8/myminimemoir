@@ -7,7 +7,10 @@ if (menuToggle && mainNavigation) {
   menuToggle.addEventListener("click", () => {
     const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
     menuToggle.setAttribute("aria-expanded", String(!isOpen));
-    menuToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Open navigation" : "Close navigation",
+    );
     mainNavigation.classList.toggle("is-open", !isOpen);
   });
 
@@ -22,7 +25,8 @@ if (menuToggle && mainNavigation) {
 
 // Make the green navigation bar slightly more compact after the page starts scrolling.
 function updateHeaderSize() {
-  if (siteHeader) siteHeader.classList.toggle("is-scrolled", window.scrollY > 35);
+  if (siteHeader)
+    siteHeader.classList.toggle("is-scrolled", window.scrollY > 35);
 }
 window.addEventListener("scroll", updateHeaderSize, { passive: true });
 updateHeaderSize();
@@ -30,3 +34,12 @@ updateHeaderSize();
 // Update the copyright year automatically.
 const yearElement = document.querySelector("#current-year");
 if (yearElement) yearElement.textContent = new Date().getFullYear();
+
+// Keep the footer's Back to top control working even when smooth anchor scrolling is unavailable.
+const backToTopLink = document.querySelector(".back-to-top");
+if (backToTopLink) {
+  backToTopLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  });
+}
